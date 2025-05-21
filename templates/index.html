@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dictionary Game</title>
+  </head>
+  <body>
+    <h1>Guess the First Paragraph</h1>
+    <p><b>Wikipedia Article Title:</b> {{ title }}</p>
+    <form method="post">
+      <input type="hidden" name="title" value="{{ title }}">
+      <input type="hidden" name="real_paragraph" value="{{ real_paragraph }}">
+      <label for="guess">Your Guess:</label><br>
+      <textarea id="guess" name="guess" rows="8" cols="80"></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
